@@ -1,0 +1,15 @@
+<h1>Welcome to the Killing Ground!</h1>
+
+<%= form_for @character do |f| %>
+
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :img_url %>
+<%= f.text_field :img_url %>
+
+<%= f.label :house_id %>
+<%= f.text_field :house_id %>
+
+<%= f.submit "Submit" %>
+<% end %>

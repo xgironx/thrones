@@ -1,0 +1,8 @@
+                  <%# ############################################# %>
+                  <%# # 201702221638L     EL MARTES   GIRO %>
+                  <%# # GIRO: CHANGED house.each to @house.each %>
+
+<h1>The houses</h1>
+    <% @houses.each do  |house| %>
+          <h2><%= link_to house.name, houses_path %> </h2>
+    <% end %>

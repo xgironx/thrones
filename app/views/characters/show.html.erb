@@ -1,0 +1,7 @@
+<h1><%= @character.name %></h1>
+
+<h2><%= @character.house.name %></h2>
+
+<p> <%= @character.name %> <%= link_to "(edit)", edit_character_path(@character) %></p>
+
+<div class="character"> <%= image_tag @character.img_url %> </div>

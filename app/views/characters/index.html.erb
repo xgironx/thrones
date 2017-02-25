@@ -1,0 +1,21 @@
+<h1>Here are the characters</h1>
+
+<%= link_to "New Character", new_character_path %>
+
+<% @characters.each do |character| %>
+    <div class="character">
+
+        <%= image_tag character.img_url %>
+
+        <br>
+
+        right before link_to character.name
+
+        <div><%= link_to character.name, character_path(character) %>
+            -
+            <%= character.house.name %>
+      </div>
+        <br>
+        <br>
+    </div>
+<% end %>
